@@ -1,0 +1,34 @@
+
+Data Collection and Processing:
+
+Import necessary libraries including pandas, numpy, scikit-learn's LogisticRegression, and accuracy_score.
+Load the heart disease dataset using pd.read_csv('heart_disease_data.csv').
+Display the first few rows of the dataset using heart_data.head().
+Display the last few rows of the dataset using heart_data.tail().
+Get information about the dataset using heart_data.shape and heart_data.info().
+Check for missing values using heart_data.isnull().sum().
+Display summary statistics of the dataset using heart_data.describe().
+Check the distribution of the target variable (0 for healthy, 1 for defective hearts) using heart_data['target'].value_counts().
+Splitting the Features and Target:
+
+Separate features (X) and target (Y) from the dataset.
+Splitting the Data into Training & Test Data:
+
+Split the data into training and test sets using train_test_split.
+The stratify parameter ensures that the distribution of the target variable is maintained in both training and test sets.
+Model Training:
+
+Initialize a logistic regression model using model = LogisticRegression().
+Train the model on the training data using model.fit(X_train, Y_train).
+Model Evaluation:
+
+Calculate accuracy on both the training and test data using the accuracy_score function.
+Print the accuracy on both training and test data.
+Building a Predictive System:
+
+Define an example input data as a tuple representing various features.
+Convert the input data into a numpy array and reshape it to match the model's input shape.
+Make a prediction on the input data using the trained model.
+Print whether the predicted outcome indicates the presence or absence of heart disease.
+
+This project aims to predict the presence or absence of heart disease based on various health-related features. It follows a typical machine learning workflow, including data loading, preprocessing, model training, evaluation, and prediction.
